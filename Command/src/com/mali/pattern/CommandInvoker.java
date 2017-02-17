@@ -14,7 +14,8 @@ import java.util.List;
  *  Partner NetID:   N/A
  *  Partner Precept: N/A
  *
- *  Description: ${DESCRIPTION}
+ *  Description: ${命令的调用者，它只需要针对CommandInterface接口发出execute命令，无需知道具体Command实例是谁,
+ * 此外,具体的Command实例已经组合了实际的命令执行者，只需委托执行者执行即可}
  ******************************************************************************/
 public class CommandInvoker {
     CommandInteface[] onCommand = new CommandInteface[7];
