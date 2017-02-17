@@ -22,7 +22,7 @@ public class Client {
         Duck duck = new Duck();
         duck.quack();
         duck.shakeWings();
-
+        // 将duck适配为bird
         BirdAdapter birdAdapter = new BirdAdapter(duck);
         birdAdapter.yelp();
         birdAdapter.fly();
