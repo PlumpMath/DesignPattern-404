@@ -3,7 +3,7 @@ package com.mali.pattern;
 /******************************************************************************
  *  Name:    mali
  *  Date:    17-2-17
- *  Time:    下午2:00
+ *  Time:    下午2:18
  *  NetID:   mali
  *  Precept: N/A
  *
@@ -13,5 +13,5 @@ package com.mali.pattern;
  *
  *  Description: ${DESCRIPTION}
  ******************************************************************************/
-public class FacadeTest {
+public class Client {
 }
