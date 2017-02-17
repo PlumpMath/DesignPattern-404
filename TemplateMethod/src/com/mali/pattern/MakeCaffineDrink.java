@@ -24,9 +24,15 @@ public abstract class MakeCaffineDrink {
         boilWater();
         brew();
         if (needCondiment()) {
-            addCondiment(); //添加了狗子
+            addCondiment(); //　添加了钩子　用户可以重写needCondiment()方法直接返回false：不添加调料;返回true：总添加调料．
+                            //　有点像mfc的样子, 留出钩子函数，以使得客户可以自定义是否执行代码中的步骤
         }
+        hook();
         pourToCup();
+    }
+
+    private void hook () {
+        //　hook method,　default do nothing　子类可以重写自定义该算法步骤　实现算法的部分自定义
     }
 
     public void boilWater() {
