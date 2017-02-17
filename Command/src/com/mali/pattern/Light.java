@@ -1,4 +1,4 @@
-package com.mali.pattern.invoker;
+package com.mali.pattern;
 
 /******************************************************************************
  *  Name:    mali
@@ -15,11 +15,12 @@ package com.mali.pattern.invoker;
  ******************************************************************************/
 public class Light {
 
-    public void on () {
+    public void on() {
         System.out.println("light is on!");
     }
 
-    public void off () {
+    public void off() {
         System.out.println("light is off");
     }
+
 }
