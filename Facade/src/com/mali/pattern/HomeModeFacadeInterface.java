@@ -13,6 +13,6 @@ package com.mali.pattern;
  *
  *  Description: ${DESCRIPTION}
  ******************************************************************************/
-public interface HomeModeFacdeInterface {
+public interface HomeModeFacadeInterface {
     void goHomeMode();
 }

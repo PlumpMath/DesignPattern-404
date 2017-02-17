@@ -14,4 +14,7 @@ package com.mali.pattern;
  *  Description: ${DESCRIPTION}
  ******************************************************************************/
 public class Door {
+    public void open() {
+        System.out.println("开门！");
+    }
 }

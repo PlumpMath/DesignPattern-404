@@ -14,4 +14,7 @@ package com.mali.pattern;
  *  Description: ${DESCRIPTION}
  ******************************************************************************/
 public class CdPlayer {
+    public void playMusic() {
+        System.out.println("播放音乐！");
+    }
 }

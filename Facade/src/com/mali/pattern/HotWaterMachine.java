@@ -14,4 +14,7 @@ package com.mali.pattern;
  *  Description: ${DESCRIPTION}
  ******************************************************************************/
 public class HotWaterMachine {
+    public void boilWater() {
+        System.out.println("烧热水");
+    }
 }
