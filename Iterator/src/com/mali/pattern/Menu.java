@@ -3,7 +3,7 @@ package com.mali.pattern;
 /******************************************************************************
  *  Name:    mali
  *  Date:    17-2-20
- *  Time:    上午9:53
+ *  Time:    下午12:56
  *  NetID:   mali
  *  Precept: N/A
  *
@@ -13,17 +13,7 @@ package com.mali.pattern;
  *
  *  Description: ${DESCRIPTION}
  ******************************************************************************/
-public class ArrayStore extends Store{
-    private ArrayMenu arrayMenu;
-    public ArrayStore() {
-        arrayMenu = new ArrayMenu();
-    }
-    public ArrayMenu getArrayMenu() {
-        return arrayMenu;
-    }
-
-    @Override
-    public com.mali.pattern.Iterator getMenuIterator () {
-        return arrayMenu.iterator();
-    }
+public abstract class Menu implements com.mali.pattern.Iterable{
+    //　该方法的实现可以改为通过Menu实现Iterable接口来实现
+    abstract com.mali.pattern.Iterator getMenuIterator();
 }

@@ -18,7 +18,7 @@ import java.util.List;
  *
  *  Description: ${DESCRIPTION}
  ******************************************************************************/
-public class ListMenu implements com.mali.pattern.Iterable {
+public class ListMenu extends Menu {
     private List<MenuItem> menu;
     public ListMenu() {
         menu = new ArrayList<MenuItem>();
@@ -35,6 +35,13 @@ public class ListMenu implements com.mali.pattern.Iterable {
         return menu.get(i);
     }
 
+    @Override
+    com.mali.pattern.Iterator getMenuIterator () {
+        return new ListMenuIterator(menu);
+    }
+    //
+    //上面和下面这个两个方法都是可替换的　　下面的一种实现相当于java的实现方式
+    //
     @Override
     public com.mali.pattern.Iterator iterator () {
         return new ListMenuIterator(menu);

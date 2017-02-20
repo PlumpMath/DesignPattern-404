@@ -18,7 +18,7 @@ import java.util.Iterator;
  *
  *  Description: ${DESCRIPTION}
  ******************************************************************************/
-public class ArrayMenu implements com.mali.pattern.Iterable{
+public class ArrayMenu extends Menu{
     MenuItem[] menu;
     public ArrayMenu() {
         menu =  new MenuItem[10];
@@ -34,6 +34,11 @@ public class ArrayMenu implements com.mali.pattern.Iterable{
 
     public Object getMenu (int i) {
         return menu[i];
+    }
+
+    @Override
+    com.mali.pattern.Iterator getMenuIterator () {
+        return new ArraMenuIterator(menu);
     }
 
     @Override
