@@ -33,7 +33,7 @@ public class Waitress {
         Menu arrayMenu = new ArrayMenu();
         Menu listMenu = new ListMenu();
         com.mali.pattern.Iterator it1 = arrayMenu.getMenuIterator();
-        // it1 it2两种是实现方式，　it2模拟java类库的实现方式
+        // it1 it2本质上都是一样的，只不过it1与menu绑定，而it2使用额外的Iterable类来模拟java类库的实现方式
         com.mali.pattern.Iterator it2 = arrayMenu.iterator();
         com.mali.pattern.Iterator it = listMenu.getMenuIterator();
 
