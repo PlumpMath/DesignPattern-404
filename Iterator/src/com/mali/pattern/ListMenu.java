@@ -44,6 +44,7 @@ public class ListMenu extends Menu {
     //
     @Override
     public com.mali.pattern.Iterator iterator () {
+        // 可以使用List的自带Iterator方法 -> menu.iterator();
         return new ListMenuIterator(menu);
     }
 }
