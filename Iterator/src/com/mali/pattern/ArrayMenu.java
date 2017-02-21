@@ -1,9 +1,9 @@
 package com.mali.pattern;
 
-import java.awt.*;
+
 import java.lang.*;
 import java.util.*;
-import java.util.Iterator;
+
 
 /******************************************************************************
  *  Name:    mali
