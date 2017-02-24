@@ -1,5 +1,7 @@
 package com.mali.pattern;
 
+import java.util.Iterator;
+
 /******************************************************************************
  *  Name:    mali
  *  Date:    17-2-21
@@ -45,6 +47,10 @@ public abstract class MenuComponent {
     }
 
     public boolean isVergetarian() {
+        throw new UnsupportedOperationException();
+    }
+
+    public Iterator<MenuComponent> createIterator () {
         throw new UnsupportedOperationException();
     }
 }

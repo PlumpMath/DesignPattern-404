@@ -1,5 +1,7 @@
 package com.mali.pattern;
 
+import java.util.Iterator;
+
 /******************************************************************************
  *  Name:    mali
  *  Date:    17-2-21
@@ -46,14 +48,19 @@ public class MenuItem extends MenuComponent {
     }
 
     @Override
+    public Iterator<MenuComponent> createIterator () {
+        return new NullIterator();
+    }
+
+    @Override
     public void print () {
-        System.out.print("菜名：" + this.getName() + "  ");
+        System.out.print("      菜名：" + this.getName() + "  ");
         if(this.isVergetarian()) {
             System.out.print("   *vegetarian*   ");
         }
         System.out.print("价格：" + this.getPrice() + "  ");
         System.out.print("描述：" + this.getDescription() + "  ");
-        System.out.println("-----------------------");
+        System.out.println("");
     }
 
 }

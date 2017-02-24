@@ -52,14 +52,19 @@ public class ActualMenu extends MenuComponent {
     }
 
     @Override
+    public Iterator<MenuComponent> createIterator () {
+        return new CompositeIteratotr(componentArrayList.iterator());
+    }
+
+    @Override
     public void print () {
-        System.out.println("菜单名：" + this.getName());
-        System.out.println("描述　：" + this.getDescription());
-        System.out.println("************************");
+        System.out.print("菜单名：" + this.getName() + " ");
+        System.out.print("描述　：" + this.getDescription() + " \n\n");
+        // System.out.println("************************");
         Iterator<MenuComponent> it = componentArrayList.iterator();
         while(it.hasNext()) {
             it.next().print();
         }
-        System.out.println("=======================");
+        System.out.println("----------------");
     }
 }
