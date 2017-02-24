@@ -18,58 +18,11 @@ import java.net.URL;
  *  Description: ${DESCRIPTION}
  ******************************************************************************/
 public class ImageProxy implements Icon {
-//    private ImageIcon imageIcon;
-//    private URL imageUrl;
-//    private Thread getImageThread;
-//    private boolean gettingImageFlag = false;
-//
-//    public ImageProxy (URL imageUrl) {
-//        this.imageUrl = imageUrl;
-//    }
-//
-//    @Override
-//    public void paintIcon (Component c, Graphics g, int x, int y) {
-//        if (imageIcon == null) {
-//            g.drawString("加载中...", x + 300, y + 200);
-//            System.out.println("加载中....");
-//            if (!gettingImageFlag) {
-//                gettingImageFlag = true;
-//                final Component cc = c;
-//                getImageThread = new Thread(new Runnable() {
-//                    @Override
-//                    public void run () {
-//                        imageIcon = new ImageIcon(imageUrl);
-//                        cc.repaint();
-//                    }
-//                });
-//                getImageThread.start();
-//            }
-//        } else {
-//            imageIcon.paintIcon(c, g, x, y);
-//        }
-//    }
-//
-//    @Override
-//    public int getIconWidth () {
-//        if (imageIcon == null) {
-//            return 300;
-//        } else {
-//            return imageIcon.getIconWidth();
-//        }
-//    }
-//
-//    @Override
-//    public int getIconHeight () {
-//        if (imageIcon == null) {
-//            return 300;
-//        } else {
-//            return imageIcon.getIconHeight();
-//        }
-//    }
-    ImageIcon imageIcon;
-    URL imageURL;
-    Thread retrievalThread;
-    boolean retrieving = false;
+
+    private ImageIcon imageIcon;
+    private URL imageURL;
+    private Thread retrievalThread;
+    private boolean retrieving = false;
 
     public ImageProxy(URL url) { imageURL = url; }
 
